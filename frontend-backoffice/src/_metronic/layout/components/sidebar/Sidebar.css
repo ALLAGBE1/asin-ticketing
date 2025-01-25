@@ -1,0 +1,33 @@
+#kt_app_sidebar {
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  box-shadow: -1px 0 5px #471401;
+  /* border-right: 4px #0f0 solid; */
+}
+
+#kt_app_sidebar_logo {
+  height: 10rem;
+  background-color: #fff;
+  border-top-right-radius: 2rem;
+  /* border-top: 2px #491E06 solid;
+    border-right: 2px #491E06 solid; */
+}
+
+.app-sidebar-menu {
+  background-color: #491e06;
+  border-bottom-right-radius: 25px;
+}
+
+#kt_app_sidebar_toggle {
+  margin-top: 5rem !important;
+}
+
+.app-sidebar .menu .menu-item .menu-link.active {
+  transition: color 0.2s ease;
+  background-color: #4b1302 !important;
+  color: #f5f5f5;
+}
+
+.app-sidebar .hover-scroll-overlay-y {
+  scrollbar-color: #471401 #471401 !important;
+}

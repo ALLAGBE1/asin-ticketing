@@ -1,0 +1,493 @@
+{
+    "items": [
+        {
+            "id": 93,
+            "scope": "satisfaction:create",
+            "description": "Peut créer une satisfaction"
+        },
+        {
+            "id": 92,
+            "scope": "satisfaction:read",
+            "description": "Peut lire toutes les satisfactions et une satisfaction spécifique"
+        },
+        {
+            "id": 76,
+            "scope": "status:read",
+            "description": "Peut lire tous les statuts et un statut spécifique"
+        },
+        {
+            "id": 78,
+            "scope": "status:update",
+            "description": "Peut mettre à jour des statuts"
+        },
+        {
+            "id": 79,
+            "scope": "status:delete",
+            "description": "Peut supprimer des statuts"
+        },
+        {
+            "id": 77,
+            "scope": "status:create",
+            "description": "Peut créer des statuts"
+        },
+        {
+            "id": 32,
+            "scope": "customer_type:read",
+            "description": "Peut lire tous les types de clients et un type spécifique"
+        },
+        {
+            "id": 33,
+            "scope": "customer_type:create",
+            "description": "Peut créer des types de clients"
+        },
+        {
+            "id": 35,
+            "scope": "customer_type:delete",
+            "description": "Peut supprimer des types de clients"
+        },
+        {
+            "id": 34,
+            "scope": "customer_type:update",
+            "description": "Peut mettre à jour des types de clients"
+        },
+        {
+            "id": 28,
+            "scope": "customer:read",
+            "description": "Peut lire tous les clients et un client spécifique"
+        },
+        {
+            "id": 29,
+            "scope": "customer:create",
+            "description": "Peut créer des clients"
+        },
+        {
+            "id": 30,
+            "scope": "customer:update",
+            "description": "Peut mettre à jour des clients"
+        },
+        {
+            "id": 31,
+            "scope": "customer:delete",
+            "description": "Peut supprimer des clients"
+        },
+        {
+            "id": 16,
+            "scope": "category:read",
+            "description": "Peut lire toutes les catégories et une catégorie spécifique de réclamation"
+        },
+        {
+            "id": 19,
+            "scope": "category:delete",
+            "description": "Peut supprimer des catégories"
+        },
+        {
+            "id": 18,
+            "scope": "category:update",
+            "description": "Peut mettre à jour des catégories"
+        },
+        {
+            "id": 17,
+            "scope": "category:create",
+            "description": "Peut créer des catégories"
+        },
+        {
+            "id": 44,
+            "scope": "institution:read",
+            "description": "Peut lire toutes les institutions et une institution spécifique"
+        },
+        {
+            "id": 45,
+            "scope": "institution:create",
+            "description": "Peut créer des institutions"
+        },
+        {
+            "id": 46,
+            "scope": "institution:update",
+            "description": "Peut mettre à jour des institutions"
+        },
+        {
+            "id": 47,
+            "scope": "institution:delete",
+            "description": "Peut supprimer des institutions"
+        },
+        {
+            "id": 56,
+            "scope": "object:read",
+            "description": "Peut lire tous les objets de réclamation et un objet spécifique"
+        },
+        {
+            "id": 58,
+            "scope": "object:update",
+            "description": "Peut mettre à jour des objets de réclamation"
+        },
+        {
+            "id": 59,
+            "scope": "object:delete",
+            "description": "Peut supprimer des objets de réclamation"
+        },
+        {
+            "id": 57,
+            "scope": "object:create",
+            "description": "Peut créer des objets de réclamation"
+        },
+        {
+            "id": 68,
+            "scope": "response_channel:read",
+            "description": "Peut lire tous les canaux de réponse et un canal spécifique"
+        },
+        {
+            "id": 70,
+            "scope": "response_channel:update",
+            "description": "Peut mettre à jour des canaux de réponse"
+        },
+        {
+            "id": 69,
+            "scope": "response_channel:create",
+            "description": "Peut créer des canaux de réponse"
+        },
+        {
+            "id": 71,
+            "scope": "response_channel:delete",
+            "description": "Peut supprimer des canaux de réponse"
+        },
+        {
+            "id": 52,
+            "scope": "insurance_type:read",
+            "description": "Peut lire tous les types d'assurance et un type spécifique"
+        },
+        {
+            "id": 53,
+            "scope": "insurance_type:create",
+            "description": "Peut créer des types d'assurance"
+        },
+        {
+            "id": 54,
+            "scope": "insurance_type:update",
+            "description": "Peut mettre à jour des types d'assurance"
+        },
+        {
+            "id": 55,
+            "scope": "insurance_type:delete",
+            "description": "Peut supprimer des types d'assurance"
+        },
+        {
+            "id": 24,
+            "scope": "currency:read",
+            "description": "Peut lire toutes les monnaies et une monnaie spécifique"
+        },
+        {
+            "id": 27,
+            "scope": "currency:delete",
+            "description": "Peut supprimer des monnaies"
+        },
+        {
+            "id": 26,
+            "scope": "currency:update",
+            "description": "Peut mettre à jour des monnaies"
+        },
+        {
+            "id": 25,
+            "scope": "currency:create",
+            "description": "Peut créer des monnaies"
+        },
+        {
+            "id": 64,
+            "scope": "reception_channel:read",
+            "description": "Peut lire tous les canaux de réception et un canal spécifique"
+        },
+        {
+            "id": 67,
+            "scope": "reception_channel:delete",
+            "description": "Peut supprimer des canaux de réception"
+        },
+        {
+            "id": 65,
+            "scope": "reception_channel:create",
+            "description": "Peut créer des canaux de réception"
+        },
+        {
+            "id": 66,
+            "scope": "reception_channel:update",
+            "description": "Peut mettre à jour des canaux de réception"
+        },
+        {
+            "id": 14,
+            "scope": "claims:update",
+            "description": "Peut mettre à jour des réclamations"
+        },
+        {
+            "id": 13,
+            "scope": "claims:create",
+            "description": "Peut créer des réclamations"
+        },
+        {
+            "id": 12,
+            "scope": "claims:read",
+            "description": "Peut lire toutes les réclamations et les réclamations spécifiques d'un utilisateur"
+        },
+        {
+            "id": 1,
+            "scope": "admin",
+            "description": "Peut tout faire"
+        },
+        {
+            "id": 3,
+            "scope": "role:create",
+            "description": "Peut créer des rôles"
+        },
+        {
+            "id": 4,
+            "scope": "role:update",
+            "description": "Peut mettre à jour des rôles"
+        },
+        {
+            "id": 2,
+            "scope": "role:read",
+            "description": "Peut lire tous les rôles et les rôles d'utilisateur spécifiques"
+        },
+        {
+            "id": 61,
+            "scope": "process:create",
+            "description": "Peut créer un processus"
+        },
+        {
+            "id": 62,
+            "scope": "process:update",
+            "description": "Peut mettre à jour un processus"
+        },
+        {
+            "id": 42,
+            "scope": "founded:update",
+            "description": "Peut mettre à jour une réclamation fondée"
+        },
+        {
+            "id": 41,
+            "scope": "founded:create",
+            "description": "Peut créer une réclamation fondée"
+        },
+        {
+            "id": 80,
+            "scope": "unity:read",
+            "description": "Peut lire toutes les unités et une unité spécifique"
+        },
+        {
+            "id": 48,
+            "scope": "institution_type:read",
+            "description": "Peut lire tous les types d'institutions et un type spécifique"
+        },
+        {
+            "id": 20,
+            "scope": "assign:read",
+            "description": "Peut lire toutes les attributions et les attributions spécifiques d'une réclamation"
+        },
+        {
+            "id": 60,
+            "scope": "process:read",
+            "description": "Peut lire un processus spécifique"
+        },
+        {
+            "id": 36,
+            "scope": "duration_treatment:read",
+            "description": "Peut lire tous les traitements de durée et un traitement de durée spécifique"
+        },
+        {
+            "id": 21,
+            "scope": "assign:create",
+            "description": "Peut créer des attributions"
+        },
+        {
+            "id": 89,
+            "scope": "upload_file:create",
+            "description": "Peut créer des fichiers téléchargés"
+        },
+        {
+            "id": 40,
+            "scope": "founded:read",
+            "description": "Peut lire une réclamation fondée spécifique"
+        },
+        {
+            "id": 22,
+            "scope": "assign:update",
+            "description": "Peut mettre à jour des attributions"
+        },
+        {
+            "id": 88,
+            "scope": "upload_file:read",
+            "description": "Peut lire tous les fichiers téléchargés et un fichier spécifique"
+        },
+        {
+            "id": 94,
+            "scope": "level:read",
+            "description": "Peut lire tous les niveaux et un niveau spécifique"
+        },
+        {
+            "id": 90,
+            "scope": "upload_file:update",
+            "description": "Peut mettre à jour des fichiers téléchargés"
+        },
+        {
+            "id": 91,
+            "scope": "upload_file:delete",
+            "description": "Peut supprimer des fichiers téléchargés"
+        },
+        {
+            "id": 72,
+            "scope": "severity_level:read",
+            "description": "Peut lire tous les niveaux de gravité et un niveau spécifique"
+        },
+        {
+            "id": 7,
+            "scope": "permission:read",
+            "description": "Peut lire toutes les permissions et les permissions spécifiques d'un utilisateur"
+        },
+        {
+            "id": 9,
+            "scope": "permission:update",
+            "description": "Peut mettre à jour des permissions"
+        },
+        {
+            "id": 63,
+            "scope": "process:delete",
+            "description": "Peut supprimer un processus"
+        },
+        {
+            "id": 87,
+            "scope": "unity_type:delete",
+            "description": "Peut supprimer des types d'unités"
+        },
+        {
+            "id": 43,
+            "scope": "founded:delete",
+            "description": "Peut supprimer une réclamation fondée"
+        },
+        {
+            "id": 75,
+            "scope": "severity_level:delete",
+            "description": "Peut supprimer des niveaux de gravité"
+        },
+        {
+            "id": 49,
+            "scope": "institution_type:create",
+            "description": "Peut créer des types d'institutions"
+        },
+        {
+            "id": 86,
+            "scope": "unity_type:update",
+            "description": "Peut mettre à jour des types d'unités"
+        },
+        {
+            "id": 23,
+            "scope": "assign:delete",
+            "description": "Peut supprimer des attributions"
+        },
+        {
+            "id": 6,
+            "scope": "role:link",
+            "description": "Peut lier/délier des rôles aux utilisateurs"
+        },
+        {
+            "id": 74,
+            "scope": "severity_level:update",
+            "description": "Peut mettre à jour des niveaux de gravité"
+        },
+        {
+            "id": 84,
+            "scope": "unity_type:read",
+            "description": "Peut lire tous les types d'unités et un type spécifique"
+        },
+        {
+            "id": 81,
+            "scope": "unity:create",
+            "description": "Peut créer des unités"
+        },
+        {
+            "id": 51,
+            "scope": "institution_type:delete",
+            "description": "Peut supprimer des types d'institutions"
+        },
+        {
+            "id": 50,
+            "scope": "institution_type:update",
+            "description": "Peut mettre à jour des types d'institutions"
+        },
+        {
+            "id": 97,
+            "scope": "level:delete",
+            "description": "Peut supprimer un niveau"
+        },
+        {
+            "id": 95,
+            "scope": "level:create",
+            "description": "Peut créer un niveau"
+        },
+        {
+            "id": 8,
+            "scope": "permission:create",
+            "description": "Peut créer des permissions"
+        },
+        {
+            "id": 38,
+            "scope": "duration_treatment:update",
+            "description": "Peut mettre à jour des traitements de durée"
+        },
+        {
+            "id": 85,
+            "scope": "unity_type:create",
+            "description": "Peut créer des types d'unités"
+        },
+        {
+            "id": 37,
+            "scope": "duration_treatment:create",
+            "description": "Peut créer des traitements de durée"
+        },
+        {
+            "id": 96,
+            "scope": "level:update",
+            "description": "Peut mettre à jour un niveau"
+        },
+        {
+            "id": 5,
+            "scope": "role:delete",
+            "description": "Peut supprimer des rôles"
+        },
+        {
+            "id": 73,
+            "scope": "severity_level:create",
+            "description": "Peut créer des niveaux de gravité"
+        },
+        {
+            "id": 15,
+            "scope": "claims:delete",
+            "description": "Peut supprimer des réclamations"
+        },
+        {
+            "id": 83,
+            "scope": "unity:delete",
+            "description": "Peut supprimer des unités"
+        },
+        {
+            "id": 10,
+            "scope": "permission:delete",
+            "description": "Peut supprimer des permissions"
+        },
+        {
+            "id": 39,
+            "scope": "duration_treatment:delete",
+            "description": "Peut supprimer des traitements de durée"
+        },
+        {
+            "id": 11,
+            "scope": "permission:link",
+            "description": "Peut lier/délier des permissions aux rôles"
+        },
+        {
+            "id": 82,
+            "scope": "unity:update",
+            "description": "Peut mettre à jour des unités"
+        }
+    ],
+    "total": 97,
+    "page": 1,
+    "size": 100,
+    "pages": 1
+}

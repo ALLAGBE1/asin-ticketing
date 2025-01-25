@@ -1,0 +1,15 @@
+.metric {
+  height: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  padding-top: 15px;
+}
+
+.metric .metric_value {
+  margin: 5px auto;
+  text-align: center;
+  padding: 5px;
+  border-radius: 17px;
+  font-size: large;
+  font-weight: 600;
+}

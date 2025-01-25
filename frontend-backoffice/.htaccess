@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+    # Enable RewriteEngine
+    RewriteEngine On
+    RewriteBase /
+
+    # Handle requests to inner pages
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ /index.html [L]
+</IfModule>

@@ -1,0 +1,12 @@
+.auth_form_border {
+  border: #f8aa65 solid 5px;
+  border-radius: 14px;
+}
+
+.bg_white {
+  background-color: #fff;
+}
+
+.mt-39 {
+  margin-top: 39px;
+}

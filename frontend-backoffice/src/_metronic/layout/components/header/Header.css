@@ -1,0 +1,7 @@
+.app-header {
+  transition: none;
+  display: flex;
+  align-items: stretch;
+  position: relative;
+  left: -4rem;
+}
