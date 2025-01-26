@@ -16,9 +16,9 @@ export const travels = [
       carNumber: "CAR 7",
       plateNumber: "CB456",
       departureTime: "08:00",
-      departurePlace: "Cotonou",
+      departurePlace: "Akassato",
       arrivalTime: "08:30",
-      arrivalPlace: "Ganhi",
+      arrivalPlace: "Saint-Michel",
       price: "7000 FCFA",
       image:"url/of/image2.png"
     },
