@@ -12,10 +12,14 @@ export default {
           customYellow: '#FFED00',
           customWhite: '#FFFFFF',
           customGray: '#F8F7F7',
+          customGrayLight: '#837F7F',
+          customGrayLightOpacity: '#EBEAEA',
+          customGrayLightOpacityTwo: '#A39D9D',
           customBlack: '#000000',
           customDarkGreen: '#014E13',
           customLightGray: '#CDCDCD',
           customBlue: '#51259B'
+          
           
         },
         keyframes: {
