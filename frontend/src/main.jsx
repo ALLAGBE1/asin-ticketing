@@ -6,10 +6,11 @@ import Footer from "./components/Footer";
 import Home from "./screens/Home/Home";
 import Header from "./components/Header/Header";
 import Auth from "./screens/Auth/Auth";
+import Profile from "./screens/Profile/Profile";
 
 function App() {
   const location = useLocation();
-  
+
   const showHeaderFooter = !["/auth"].includes(location.pathname);
 
   return (
@@ -19,6 +20,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/auth" element={<Auth />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="*" element={<h1>404</h1>} />
       </Routes>
       {showHeaderFooter && <Footer />}
     </>

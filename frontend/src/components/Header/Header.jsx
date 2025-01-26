@@ -11,12 +11,12 @@ const Header = () => {
       link: "/",
     },
     {
-      name: "Booker",
+      name: "Ticket",
       link: "/about",
     },
     {
       name: "Profil",
-      link: "/services",
+      link: "/profile",
     },
   ];
   return (
