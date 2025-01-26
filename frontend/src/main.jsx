@@ -8,6 +8,7 @@ import Header from "./components/Header/Header";
 import Auth from "./screens/Auth/Auth";
 import Profile from "./screens/Profile/Profile";
 import Search from "./screens/Search/Search";
+import { travels } from "./constants/data";
 
 function App() {
   const location = useLocation();
@@ -22,7 +23,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/auth" element={<Auth />} />
         <Route path="/profile" element={<Profile />} />
-        <Route path="/search" element={<Search />} />
+        <Route path="/search" element={<Search travels={travels} />} />
         <Route path="*" element={<h1>404</h1>} />
       </Routes>
       {showHeaderFooter && <Footer />}
