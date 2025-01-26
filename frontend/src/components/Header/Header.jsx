@@ -78,10 +78,12 @@ const Header = () => {
               {/* <button className="bg-orange-500 text-[1.1rem] font-normal text-white px-5 py-1.5 rounded lg:ml-10 md:ml-6 sm:ml-0 ml-0">
                 Register
               </button> */}
-              <button className="bg-customBlue text-[1.1rem] font-normal text-white px-5 py-1.5 rounded lg:ml-10 md:ml-6 sm:ml-0 ml-0">
-                Connexion
-                {/* S&apos;inscrire */}
-              </button>
+              <Link to="/auth" className="">
+                <button className="bg-customBlue text-[1.1rem] font-normal text-white px-5 py-1.5 rounded lg:ml-10 md:ml-6 sm:ml-0 ml-0">
+                  Connexion
+                  {/* S&apos;inscrire */}
+                </button>
+              </Link>
             </ul>
           </div>
         </div>

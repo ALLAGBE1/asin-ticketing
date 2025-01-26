@@ -5,6 +5,7 @@ import './index.css'
 import Footer from './components/Footer';
 import Home from './screens/Home/Home';
 import Header from './components/Header/Header';
+import Auth from './screens/Auth/Auth';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/auth" element={<Auth />} />
         </Routes>
       <Footer />
     </>

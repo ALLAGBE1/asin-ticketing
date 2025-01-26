@@ -11,6 +11,7 @@ export default {
           customGreen: '#014E13', // Ajoute ta couleur ici
           customYellow: '#FFED00',
           customWhite: '#FFFFFF',
+          customGray: '#F8F7F7',
           customBlack: '#000000',
           customDarkGreen: '#014E13',
           customLightGray: '#CDCDCD',
