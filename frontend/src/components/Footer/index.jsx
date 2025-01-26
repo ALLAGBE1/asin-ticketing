@@ -1,12 +1,12 @@
 // import { Img } from "../Img";
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 
 export default function Footer() {
   return (
-    <footer className="container mx-auto bg-[#021f20]">
-      <div className="flex flex-col sm:flex-row p-8">
-        <div className="w-full sm:w-1/3 flex justify-center mb-3 sm:md-0">
+    <footer className="w-full container mx-auto bg-gray-400">
+      {/* <div className="flex flex-col sm:flex-row p-8"> */}
+        {/* <div className="w-full sm:w-1/3 flex justify-center mb-3 sm:md-0">
             <div className="flex flex-col gap-2">
                 <h2 className="text-base sm:text-lg md:text-xl lg:text-1xl xl:text-1xl font-bold uppercase text-[#ffffff]  mb-1">
                     Événements
@@ -67,10 +67,10 @@ export default function Footer() {
                 </Link>
             </ul>
         </div>   
-      </div>
+      </div> */}
 
       <div className="">
-        <h5 className="text-customWhite text-center">@SIMPHAT 2024 Tous droits réservés</h5>
+        <h5 className="text-customWhite text-center">@ASIN 2025 Tous droits réservés</h5>
       </div>
 
       <div className="">

@@ -13,7 +13,8 @@ export default {
           customWhite: '#FFFFFF',
           customBlack: '#000000',
           customDarkGreen: '#014E13',
-          customLightGray: '#CDCDCD'
+          customLightGray: '#CDCDCD',
+          customBlue: '#51259B'
           
         },
         keyframes: {
