@@ -73,7 +73,7 @@ const Login = () => {
         <img src={logo} alt="Lolo Andoche" className="" />
       </div>
 
-      <div className="bg-customGray p-6 rounded-xl shadow-md ">
+      <div className="bg-customGray p-14 rounded-[30px] shadow-md ">
         <form onSubmit={handleSubmit}>
           <h2 className="text-2xl font-bold text-center mb-6 text-customBlue">
             CONNEXION
@@ -84,7 +84,7 @@ const Login = () => {
           )}
 
           <label className="block mb-4">
-            <span className="text-gray-700 px-5">Numéro</span>
+            <span className="text-gray-700 px-5">Numéro de téléphone</span>
             <input
               type="text"
               name="phone"
