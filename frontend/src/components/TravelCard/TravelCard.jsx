@@ -1,5 +1,5 @@
 // TravelCard.jsx
-import { Link } from "react-router-dom"; // Importez Link
+import { Link } from "react-router-dom"; 
 import itrip from "../../assets/icones/icone-trip.svg";
 import PropTypes from "prop-types";
 

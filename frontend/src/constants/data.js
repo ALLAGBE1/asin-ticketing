@@ -9,7 +9,10 @@ export const travels = [
       arrivalTime: "07:50",
       arrivalPlace: "Saint-Michel",
       price: "5000 FCFA",
-      image:"url/of/image.png"
+      image:"url/of/image.png",
+      seat: 4,
+      seatReserved: 2,
+      seatAvailable: 2
     },
     {
       id: 2,
@@ -20,7 +23,10 @@ export const travels = [
       arrivalTime: "08:30",
       arrivalPlace: "Saint-Michel",
       price: "7000 FCFA",
-      image:"url/of/image2.png"
+      image:"url/of/image2.png",
+      seat: 2,
+      seatReserved: 1,
+      seatAvailable: 1
     },
     //... vous pouvez ajouter d'autres
   ];

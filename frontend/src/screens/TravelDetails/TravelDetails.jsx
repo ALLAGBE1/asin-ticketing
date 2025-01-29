@@ -1,5 +1,6 @@
 // import { useParams, useNavigate } from "react-router-dom";
 // import { useParams, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import itrip from "../../assets/images-screen/itrip.png";
 import ipoint from "../../assets/images-screen/point.png";
@@ -21,7 +22,7 @@ const TravelDetails = ({ travels }) => {
 
   return (
     <div className="container mx-auto mb-5 bg-customGrayLightOpacity ">
-      <div className="w-screen h-[235px]">
+      <div className="h-[235px]">
         <img
           src={itrip}
           alt="Mr Talon"
@@ -35,17 +36,17 @@ const TravelDetails = ({ travels }) => {
           </p>
         </div>
       </div>
-      <div className="p-5">
-        <div className="rounded-[20px] bg-white p-3 shadow-md flex flex-col mx-auto ">
+      <div className="flex flex-col justify-center p-3 sm:p-0">
+        <div className="rounded-[20px] bg-white p-3 shadow-md flex flex-col mx-auto w-[361px]">
           <div className="flex flex-row gap-10 pl-4 mb-2">
             <p className="">Sam, 17/08/2025</p>
           </div>
           <div className="flex flex-col bg-customGrayLightOpacity p-3 shadow-md ">
-            <div className="">
-              <p className="">Car no. {travel.plateNumber}</p>
+            <div className="pb-4">
+              <p className="text-center">Car no. {travel.plateNumber}</p>
             </div>
             <div className="flex flex-row justify-between">
-              <div className="">
+              <div className=" w-[90px]">
                 <p className="text-customBlue text-[20px]">
                   {travel.departurePlace}
                 </p>
@@ -57,14 +58,14 @@ const TravelDetails = ({ travels }) => {
               </div>
             </div>
             <div className="flex flex-row justify-between">
-              <div className="">
+              <div className=" w-[90px]">
                 <p className="">{travel.departureTime}</p>
               </div>
-              <div className="flex flex-row h-full  justify-center items-center py-1">
+              <div className="flex flex-row h-[4px] w-[77px] justify-center items-center transform translate-y-[225%] translate-x-[-50%] ">
                 <img
                   src={ipoint}
                   alt="Mr Talon"
-                  className="object-cover h-[16px] w-[16px]"
+                  className="object-cover h-[14px] w-[14px]"
                 />
                 <img
                   src={iligne}
@@ -74,20 +75,25 @@ const TravelDetails = ({ travels }) => {
                 <img
                   src={ipoint}
                   alt="Mr Talon"
-                  className="object-cover h-[16px] w-[16px]"
+                  className="object-cover h-[14px] w-[14px]"
                 />
               </div>
-              <div className="">
+              <div className=" transform translate-x-[-160%]">
                 <p className="">{travel.arrivalTime}</p>
               </div>
             </div>
           </div>
-          {/* <div className=""></div> */}
           <div className="mt-4">
-            <div className="">Places disponibles</div>
+            <div className="text-[18px] font-bold-[700px]">
+              Places disponibles
+            </div>
             <div className="flex flex-row justify-between">
-              <p className="text-[14px]">04 places disponibles</p>
-              <p className="text-[14px]">Disposition des sièges 2*2</p>
+              <p className="text-[14px] font-bold-[600px]">
+                04 places disponibles
+              </p>
+              <p className="text-[14px] font-bold-[600px]">
+                Disposition des sièges 2*2
+              </p>
             </div>
 
             <div className="mt-4">
@@ -115,6 +121,25 @@ const TravelDetails = ({ travels }) => {
                   className="object-cover h-[16px] w-[16px]"
                 />
                 <p className="text-[15px]">Espace de stockage</p>
+              </div>
+
+              <div className="flex flex-row justify-between mt-8">
+                <div className="">
+                  <p className="">2 * 500.00</p>
+                  <p className="text-customBlue text-[20px] font-bold-[700px]">
+                    Mt : 1000.00 FCFA
+                  </p>
+                </div>
+                {/* <div className=""> */}
+                <Link to={`/travel/${travel.id}/details`} className="">
+                  <button
+                    type="submit"
+                    className="w-[132px] bg-customBlue text-white p-2 rounded-[15px] flex justify-center mx-auto"
+                  >
+                    Continue
+                  </button>
+                </Link>
+                {/* </div> */}
               </div>
             </div>
           </div>

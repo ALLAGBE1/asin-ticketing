@@ -14,6 +14,7 @@ export default {
           customGray: '#F8F7F7',
           customGrayLight: '#837F7F',
           customGrayLightOpacity: '#EBEAEA',
+          customGrayLightOpacityOne: '#C4C4C4',
           customGrayLightOpacityTwo: '#A39D9D',
           customBlack: '#000000',
           customDarkGreen: '#014E13',
