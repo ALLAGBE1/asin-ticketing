@@ -37,10 +37,9 @@ const TravelDetails = ({ travels }) => {
     }
 
   return (
-    <div className="container mx-auto mb-5 bg-customGrayLightOpacity ">
+    <div className="container mx-auto bg-customGrayLightOpacity h-[100vh]">
       <div className="h-[235px]">
         <img
-          // src={itrip}
           src={image}
           alt="Mr Talon"
           className="w-full h-full object-cover"

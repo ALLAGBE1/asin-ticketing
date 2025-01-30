@@ -32,7 +32,7 @@ const TravelExtraDetails = ({ travels }) => {
       }
 
   return (
-    <div className="container mx-auto mb-5  ">
+    <div className="container mx-auto h-[100vh]">
       <div className="h-[235px]">
         <img
           src={image}
