@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import rouleur from "../../assets/images-screen/rouleur.jpg";
 import voiture from "../../assets/images-screen/voiture.jpg";
+import americar from "../../assets/images-screen/americar.jpg";
 import reserved from "../../assets/images-screen/reserved.png";
 import available from "../../assets/images-screen/available.png";
 import selected from "../../assets/images-screen/selected.png";
@@ -17,19 +18,22 @@ const TravelExtraDetails = ({ travels }) => {
     return <p>Voyage non trouvé</p>;
   }
 
-   let image;
-  
-      switch (travel.image) {
-          case 'itrip':
-              image = voiture;
-              break;
-        case 'irouleur':
-          image = rouleur;
+  let image;
+
+  switch (travel.image) {
+    case "itrip":
+      image = voiture;
+      break;
+    case "irouleur":
+      image = rouleur;
+      break;
+    case "iamericar":
+          image = americar;
           break;
-          default:
-              image = null;
-              break
-      }
+    default:
+      image = null;
+      break;
+  }
 
   return (
     <div className="container mx-auto h-[100vh]">

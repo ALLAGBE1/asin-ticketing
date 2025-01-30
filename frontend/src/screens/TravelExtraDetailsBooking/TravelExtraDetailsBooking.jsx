@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import rouleur from "../../assets/images-screen/rouleur.jpg";
 import voiture from "../../assets/images-screen/voiture.jpg";
+import americar from "../../assets/images-screen/americar.jpg";
 import PropTypes from "prop-types";
 
 const TravelExtraDetailsBooking = ({ travels }) => {
@@ -21,6 +22,9 @@ const TravelExtraDetailsBooking = ({ travels }) => {
       break;
     case "irouleur":
       image = rouleur;
+      break;
+    case "iamericar":
+      image = americar;
       break;
     default:
       image = null;

@@ -27,7 +27,7 @@ const Login = () => {
 
     try {
       const response = await fetch(
-        "https://simphat-api.vercel.app/users/login/",
+        "https://asin-api.vercel.app/users/login/",
         {
           method: "POST",
           headers: {

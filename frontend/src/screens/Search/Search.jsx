@@ -10,12 +10,12 @@ function Search({ travels }) {
     <div className="container mx-auto py-6 bg-customGrayLightOpacity">
       <div className="flex flex-row justify-center mb-5 gap-6">
         <div className="rounded-[14px] bg-white p-6 shadow-md w-[168px]">
-          <p className="text-customGrayLight">From</p>
+          <p className="text-customGrayLight">De</p>
           <p className="">Akassato</p>
         </div>
 
         <div className="rounded-[14px] bg-white p-6 shadow-md w-[168px]">
-          <p className="text-customGrayLight">To</p>
+          <p className="text-customGrayLight">À</p>
           <p className="">Saint-Michel</p>
         </div>
       </div>

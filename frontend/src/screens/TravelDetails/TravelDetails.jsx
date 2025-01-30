@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import rouleur from "../../assets/images-screen/rouleur.jpg";
 import voiture from "../../assets/images-screen/voiture.jpg";
+import americar from "../../assets/images-screen/americar.jpg";
 import ipoint from "../../assets/images-screen/point.png";
 import iligne from "../../assets/images-screen/ligne.png";
 import iaircraft from "../../assets/images-screen/aircraft.png";
@@ -21,20 +22,22 @@ const TravelDetails = ({ travels }) => {
     return <p>Voyage non trouvé</p>;
   }
 
-
   let image;
 
-    switch (travel.image) {
-        case 'itrip':
-            image = voiture;
-            break;
-      case 'irouleur':
-        image = rouleur;
-        break;
-        default:
-            image = null;
-            break
-    }
+  switch (travel.image) {
+    case "itrip":
+      image = voiture;
+      break;
+    case "irouleur":
+      image = rouleur;
+      break;
+    case "iamericar":
+      image = americar;
+      break;
+    default:
+      image = null;
+      break;
+  }
 
   return (
     <div className="container mx-auto bg-customGrayLightOpacity h-[100vh]">
