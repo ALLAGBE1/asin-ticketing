@@ -43,7 +43,41 @@ const TravelExtraDetailsBooking = ({ travels }) => {
           </p>
         </div>
       </div>
-      <div className="bg-red-600 mx-auto w-[361px]"></div>
+      <div className="mb-3">
+        <p className="text-[30px] font-bold-[700px] text-center text-customBlue">
+          Réservation complète
+        </p>
+      </div>
+      <div className="mx-auto w-[361px]">
+        <div className="flex flex-col justify-center items-center w-[359px] bg-customGrayLightOpacity rounded-[30px] p-4">
+          <div className="flex flex-row gap-10">
+            <p className="text-[30px] font-bold-[600px]">Ticket :</p>
+            <p className="text-[30px] font-bold-[600px] text-customGrayLight">
+              2 Seats
+            </p>
+          </div>
+          <div className="flex flex-row gap-10">
+            <p className="text-[30px] font-bold-[600px]">Bus No :</p>
+            <p className="text-[30px] font-bold-[600px] text-customGrayLight">
+              CA123
+            </p>
+          </div>
+
+          <div className="flex flex-row gap-10">
+            <p className="text-[30px] font-bold-[600px]">Siège No.: </p>
+            <p className="text-[30px] font-bold-[600px] text-customGrayLight">
+              2 & 3
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-row justify-center items-center w-[359px] bg-customGrayLightOpacity rounded-[30px] p-4 gap-10 mt-4">
+          <p className="text-[30px] font-bold-[700px]">Total:</p>
+          <p className="text-[30px] font-bold-[700px] text-customBlue">
+            Mt. 1000.00
+          </p>
+        </div>
+      </div>
 
       <div className="mt-8">
         <Link to={`/travel/${travel.id}/details`} className="">
@@ -51,7 +85,7 @@ const TravelExtraDetailsBooking = ({ travels }) => {
             type="submit"
             className="w-[322px] h-[57px] bg-customBlue text-white p-2 rounded-[8px] flex justify-center items-center mx-auto"
           >
-            Book Maintenant
+            Continuer le paiement
           </button>
         </Link>
       </div>

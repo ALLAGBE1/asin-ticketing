@@ -1,6 +1,11 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import "./index.css";
 import Footer from "./components/Footer";
 import Home from "./screens/Home/Home";
@@ -12,6 +17,7 @@ import { travels } from "./constants/data";
 import TravelDetails from "./screens/TravelDetails/TravelDetails";
 import TravelExtraDetails from "./screens/TravelExtraDetails/TravelExtraDetails";
 import TravelExtraDetailsBooking from "./screens/TravelExtraDetailsBooking/TravelExtraDetailsBooking";
+import Ticket from "./screens/Ticket/Ticket";
 
 function App() {
   const location = useLocation();
@@ -27,9 +33,19 @@ function App() {
         <Route path="/auth" element={<Auth />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/search" element={<Search travels={travels} />} />
-        <Route path="/travel/:id" element={<TravelDetails travels={travels} />} />
-          <Route path="/travel/:id/details" element={<TravelExtraDetails travels={travels} />} />
-            <Route path="/travel/:id/detailsBooking" element={<TravelExtraDetailsBooking travels={travels} />} />
+        <Route path="/ticket" element={<Ticket />} />
+        <Route
+          path="/travel/:id"
+          element={<TravelDetails travels={travels} />}
+        />
+        <Route
+          path="/travel/:id/details"
+          element={<TravelExtraDetails travels={travels} />}
+        />
+        <Route
+          path="/travel/:id/detailsBooking"
+          element={<TravelExtraDetailsBooking travels={travels} />}
+        />
         <Route path="*" element={<h1>404</h1>} />
       </Routes>
       {showHeaderFooter && <Footer />}
