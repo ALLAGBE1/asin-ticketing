@@ -1,7 +1,8 @@
 // screens/TravelExtraDetails/TravelExtraDetails.jsx
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
-import itrip from "../../assets/images-screen/itrip.png";
+import rouleur from "../../assets/images-screen/rouleur.jpg";
+import voiture from "../../assets/images-screen/voiture.jpg";
 import reserved from "../../assets/images-screen/reserved.png";
 import available from "../../assets/images-screen/available.png";
 import selected from "../../assets/images-screen/selected.png";
@@ -16,11 +17,25 @@ const TravelExtraDetails = ({ travels }) => {
     return <p>Voyage non trouvé</p>;
   }
 
+   let image;
+  
+      switch (travel.image) {
+          case 'itrip':
+              image = voiture;
+              break;
+        case 'irouleur':
+          image = rouleur;
+          break;
+          default:
+              image = null;
+              break
+      }
+
   return (
     <div className="container mx-auto mb-5  ">
       <div className="h-[235px]">
         <img
-          src={itrip}
+          src={image}
           alt="Mr Talon"
           className="w-full h-full object-cover"
         />
@@ -57,7 +72,7 @@ const TravelExtraDetails = ({ travels }) => {
       </div>
 
       <div className="mt-8">
-        <Link to={`/travel/${travel.id}/details`} className="">
+        <Link to={`/travel/${travel.id}/detailsBooking`} className="">
           <button
             type="submit"
             className="w-[322px] h-[57px] bg-customBlue text-white p-2 rounded-[8px] flex justify-center items-center mx-auto"

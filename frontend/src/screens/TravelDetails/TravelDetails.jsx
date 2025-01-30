@@ -2,7 +2,8 @@
 // import { useParams, useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
-import itrip from "../../assets/images-screen/itrip.png";
+import rouleur from "../../assets/images-screen/rouleur.jpg";
+import voiture from "../../assets/images-screen/voiture.jpg";
 import ipoint from "../../assets/images-screen/point.png";
 import iligne from "../../assets/images-screen/ligne.png";
 import iaircraft from "../../assets/images-screen/aircraft.png";
@@ -20,11 +21,27 @@ const TravelDetails = ({ travels }) => {
     return <p>Voyage non trouvé</p>;
   }
 
+
+  let image;
+
+    switch (travel.image) {
+        case 'itrip':
+            image = voiture;
+            break;
+      case 'irouleur':
+        image = rouleur;
+        break;
+        default:
+            image = null;
+            break
+    }
+
   return (
     <div className="container mx-auto mb-5 bg-customGrayLightOpacity ">
       <div className="h-[235px]">
         <img
-          src={itrip}
+          // src={itrip}
+          src={image}
           alt="Mr Talon"
           className="w-full h-full object-cover"
         />

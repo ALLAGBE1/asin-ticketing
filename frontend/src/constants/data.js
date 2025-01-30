@@ -9,7 +9,7 @@ export const travels = [
       arrivalTime: "07:50",
       arrivalPlace: "Saint-Michel",
       price: "5000 FCFA",
-      image:"url/of/image.png",
+      image:"itrip",
       seat: 4,
       seatReserved: 2,
       seatAvailable: 2
@@ -23,7 +23,7 @@ export const travels = [
       arrivalTime: "08:30",
       arrivalPlace: "Saint-Michel",
       price: "7000 FCFA",
-      image:"url/of/image2.png",
+      image:"irouleur",
       seat: 2,
       seatReserved: 1,
       seatAvailable: 1

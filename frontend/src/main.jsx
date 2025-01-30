@@ -11,6 +11,7 @@ import Search from "./screens/Search/Search";
 import { travels } from "./constants/data";
 import TravelDetails from "./screens/TravelDetails/TravelDetails";
 import TravelExtraDetails from "./screens/TravelExtraDetails/TravelExtraDetails";
+import TravelExtraDetailsBooking from "./screens/TravelExtraDetailsBooking/TravelExtraDetailsBooking";
 
 function App() {
   const location = useLocation();
@@ -28,6 +29,7 @@ function App() {
         <Route path="/search" element={<Search travels={travels} />} />
         <Route path="/travel/:id" element={<TravelDetails travels={travels} />} />
           <Route path="/travel/:id/details" element={<TravelExtraDetails travels={travels} />} />
+            <Route path="/travel/:id/detailsBooking" element={<TravelExtraDetailsBooking travels={travels} />} />
         <Route path="*" element={<h1>404</h1>} />
       </Routes>
       {showHeaderFooter && <Footer />}

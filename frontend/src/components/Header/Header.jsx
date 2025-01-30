@@ -28,7 +28,7 @@ const Header = () => {
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               {/* Logo section */}
-              <Link className="text-3xl text-orange-500 font-semibold tracking-[0.1rem]">
+              <Link to="/" className="text-3xl text-orange-500 font-semibold tracking-[0.1rem]">
                 {/* Navbar */}
                 <img
                   src={logo}
