@@ -15,8 +15,7 @@ function Success() {
 
         <div className="w-full sm:w-1/2 ">
           <div className="flex justify-center items-center">
-            <div className="flex flex-col justify-center items-center">
-              <p className="text-[24px] font-bold-[700px] text-customBlue mb-4"></p>
+            <div className="flex flex-col justify-center items-center p-4">
               <p className="text-[24px] font-bold-[600px] text-customBlue">
                 Vous avez réservé votre siège auto. <br /> Profitez de votre
                 voyage en bus avec nous. Merci !
