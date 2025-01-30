@@ -80,7 +80,8 @@ const TravelExtraDetailsBooking = ({ travels }) => {
       </div>
 
       <div className="mt-8">
-        <Link to={`/travel/${travel.id}/details`} className="">
+        {/* <Link to={`/travel/${travel.id}/details`} className=""> */}
+        <Link to="/success" className="">
           <button
             type="submit"
             className="w-[322px] h-[57px] bg-customBlue text-white p-2 rounded-[8px] flex justify-center items-center mx-auto"

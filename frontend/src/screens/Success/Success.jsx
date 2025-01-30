@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import istopbus from "../../assets/images-screen/stopbus.png";
+import istopbus from "../../assets/images-screen/passengers.png";
 
-function Ticket() {
+function Success() {
   return (
-    <div className="container mx-auto h-[100vh]">
+    <div className="container mx-auto">
       <div className="flex flex-col sm:flex-row mt-10 mb-8">
         <div className="w-full sm:w-1/2  flex items-center justify-center mb-2">
           <img
@@ -14,14 +14,12 @@ function Ticket() {
         </div>
 
         <div className="w-full sm:w-1/2 ">
-          <div className="flex justify-center items-center" >
+          <div className="flex justify-center items-center">
             <div className="flex flex-col justify-center items-center">
-              <p className="text-[36px] font-bold-[700px] text-customBlue mb-4">
-                Oops!
-              </p>
+              <p className="text-[24px] font-bold-[700px] text-customBlue mb-4"></p>
               <p className="text-[24px] font-bold-[600px] text-customBlue">
-                Vous n’avez pas encore de billet. <br /> Veuillez d’abord
-                réserver.
+                Vous avez réservé votre siège auto. <br /> Profitez de votre
+                voyage en bus avec nous. Merci !
               </p>
             </div>
           </div>
@@ -41,4 +39,4 @@ function Ticket() {
   );
 }
 
-export default Ticket;
+export default Success;

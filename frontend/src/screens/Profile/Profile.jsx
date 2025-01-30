@@ -2,7 +2,7 @@ import iprofile from "../../assets/images-screen/image-profile.png";
 
 function Profile() {
   return (
-    <div className="container mx-auto ">
+    <div className="container mx-auto h-[100vh]">
       <div className="flex justify-center">
         <p className="text-customBlue text-[36px]">Your Information</p>
       </div>

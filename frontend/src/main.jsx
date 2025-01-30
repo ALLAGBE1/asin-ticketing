@@ -18,6 +18,7 @@ import TravelDetails from "./screens/TravelDetails/TravelDetails";
 import TravelExtraDetails from "./screens/TravelExtraDetails/TravelExtraDetails";
 import TravelExtraDetailsBooking from "./screens/TravelExtraDetailsBooking/TravelExtraDetailsBooking";
 import Ticket from "./screens/Ticket/Ticket";
+import Success from "./screens/Success/Success";
 
 function App() {
   const location = useLocation();
@@ -46,6 +47,7 @@ function App() {
           path="/travel/:id/detailsBooking"
           element={<TravelExtraDetailsBooking travels={travels} />}
         />
+        <Route path="/success" element={<Success />} />
         <Route path="*" element={<h1>404</h1>} />
       </Routes>
       {showHeaderFooter && <Footer />}

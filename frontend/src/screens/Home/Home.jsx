@@ -5,7 +5,8 @@ function Home() {
   return (
     // {/* // <div className="container mx-auto h-screen grid place-items-center"> */}
 
-    <div className="container mx-auto p-5 ">
+    // <div className="container mx-auto p-5 h-[100vh]">
+    <div className="container mx-auto p-5">
       <div className="flex flex-col sm:flex-row ">
         <p className="text-[24px] lg:px-24 md:px-16 sm:px-14 px-12 py-2 ">
           Bonjour, Vous cherchez un bus ? <br /> Vous êtes au bon endroit !
@@ -13,7 +14,8 @@ function Home() {
       </div>
 
       <div className="flex flex-col sm:flex-row text-base mt-10">
-        <div className="w-full sm:w-1/2  flex items-center justify-center mb-2">
+      {/* <div className="flex flex-col sm:flex-row text-base"> */}
+        <div className="w-full sm:w-1/2  flex items-center justify-center">
           <img
             src={ishearch}
             alt="Mr Talon"
