@@ -542,29 +542,38 @@ export const MENU_SIDEBAR: TMenuConfig = [
   {
     title: "Tickets",
     icon: "ki-filled ki-cheque",
-    path: "/tickets/list",
+    path: "/tickets",
+  },
+  {
+    title: "Trajets",
+    icon: "ki-filled ki-pointers",
+    path: "/trips",
   },
   {
     title: "Itinéraires",
-    path: "",
+    path: "/itineraires",
     icon: "ki-filled ki-route",
   },
   {
     title: "Moyens de transport",
     icon: "ki-filled ki-bus",
-    path: "",
+    path: "/transport-ways",
   },
   {
     title: "Utilisateurs",
     icon: "ki-filled ki-users",
     children: [
       {
+        title: "Dashboard",
+        path: "/users",
+      },
+      {
         title: "Clients",
-        path: "",
+        path: "/users/clients",
       },
       {
         title: "Conducteurs",
-        path: "",
+        path: "/users/drivers",
       },
     ],
   },
@@ -573,16 +582,20 @@ export const MENU_SIDEBAR: TMenuConfig = [
     icon: "ki-filled ki-setting-2",
     children: [
       {
+        title: "Dashboard",
+        path: "/settings",
+      },
+      {
         title: "Stations",
-        path: "",
+        path: "/settings/stations",
       },
       {
         title: "Types de Conducteurs",
-        path: "",
+        path: "/settings/driver-types",
       },
       {
         title: "Types de moyens",
-        path: "",
+        path: "/settings/transport-types",
       },
     ],
   },

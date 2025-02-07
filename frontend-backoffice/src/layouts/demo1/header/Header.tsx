@@ -28,7 +28,7 @@ const Header = () => {
       <Container className="flex justify-between items-stretch lg:gap-4">
         <HeaderLogo />
         <Breadcrumbs />
-        {/* {pathname.includes('/account') ? <Breadcrumbs /> : <MegaMenu />} */}
+        {pathname.includes('/account') ? <Breadcrumbs /> : <MegaMenu />}
         <HeaderTopbar />
       </Container>
     </header>

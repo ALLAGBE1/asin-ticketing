@@ -21,7 +21,7 @@ import { KeenIcon } from "@/components/keenicons";
 // import { ChannelStats, EarningsChart, EntryCallout, Highlights, TeamMeeting, Teams } from "@/pages/dashboards";
 import { TicketTable } from "../components/TicketTable";
 
-const TicketsList = () => {
+const SetttingsDriversTypes = () => {
   const [date, setDate] = useState<DateRange | undefined>({
     from: new Date(2025, 0, 20),
     to: addDays(new Date(2025, 0, 20), 20),
@@ -94,4 +94,4 @@ const TicketsList = () => {
   );
 };
 
-export { TicketsList };
+export { SetttingsDriversTypes };

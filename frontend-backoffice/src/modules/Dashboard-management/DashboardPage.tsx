@@ -7,7 +7,7 @@ const DashboardPage = () => {
     <Routes>
       <Route element={<DashboardLayout />}>
         <Route path="/" element={<DashboardMain />} />
-      </Route>{" "}
+      </Route>
     </Routes>
   );
 };

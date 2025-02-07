@@ -10,20 +10,20 @@ const SidebarHeader = forwardRef<HTMLDivElement, any>((props, ref) => {
   const lightLogo = () => (
     <Fragment>
       <Link to="/" className="dark:hidden">
-        <img
+        {/* <img
           src={toAbsoluteUrl('/media/app/default-logo.svg')}
           className="default-logo min-h-[22px] max-w-none"
-        />
+        /> */}
         <img
           src={toAbsoluteUrl('/media/app/mini-logo.svg')}
           className="small-logo min-h-[22px] max-w-none"
         />
       </Link>
       <Link to="/" className="hidden dark:block">
-        <img
+        {/* <img
           src={toAbsoluteUrl('/media/app/default-logo-dark.svg')}
           className="default-logo min-h-[22px] max-w-none"
-        />
+        /> */}
         <img
           src={toAbsoluteUrl('/media/app/mini-logo.svg')}
           className="small-logo min-h-[22px] max-w-none"

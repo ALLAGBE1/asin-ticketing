@@ -84,13 +84,36 @@ import {
 } from "@/pages/authentication";
 import { DashboardPage } from "@/modules/Dashboard-management/DashboardPage";
 import { TicketsPage } from "@/modules/Tickets-management/TicketsPage";
+import { ItinerairePages } from "@/modules/Itineraire-management/ItinerairePages";
+import { UsersPages } from "@/modules/Users-management/UsersPages";
+import { SetttingsPages } from "@/modules/Settings-managements/SetttingsPages";
+import { TripsPages } from '@/modules/Trip-management/TripsPages';
+import { TransportWaysPages } from "@/modules/Transport-Ways-management/TransportWaysPages";
 
 const AppRoutingSetup = (): ReactElement => {
   return (
     <Routes>
       <Route element={<RequireAuth />}>
         <Route element={<Demo1Layout />}>
+          {/* new routes  */}
           <Route path="/" element={<Navigate to="/dash" />} />
+
+          <Route path="/test" element={<DefaultPage />} />
+
+          <Route path="/dash" element={<DashboardPage />} />
+
+          <Route path="/tickets" element={<TicketsPage />} />
+
+          <Route path="/trips" element={<TripsPages />} />
+
+          <Route path="/transport-ways" element={<TransportWaysPages />} />
+
+          <Route path="/itineraires" element={<ItinerairePages />} />
+
+          <Route path="/users" element={<UsersPages />} />
+
+          <Route path="/settings" element={<SetttingsPages />} />
+          {/* end of new routes  */}
 
           <Route path="/dark-sidebar" element={<Demo1DarkSidebarPage />} />
           <Route
@@ -335,10 +358,6 @@ const AppRoutingSetup = (): ReactElement => {
             path="/authentication/get-started"
             element={<AuthenticationGetStartedPage />}
           />
-
-          <Route path="/dash" element={<DashboardPage />} />
-
-          <Route path="/tickets" element={<TicketsPage />} />
         </Route>
       </Route>
       <Route path="error/*" element={<ErrorsRouting />} />

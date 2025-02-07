@@ -20,8 +20,18 @@ import { KeenIcon } from "@/components/keenicons";
 // import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 // import { ChannelStats, EarningsChart, EntryCallout, Highlights, TeamMeeting, Teams } from "@/pages/dashboards";
 import { TicketTable } from "../components/TicketTable";
+import {
+  FavoriteGames,
+  NowPlaying,
+  Tournaments,
+} from "@/pages/public-profile/profiles/gamer";
+import {
+  About,
+  CommunityBadges,
+} from "@/pages/public-profile/profiles/default";
+import { Activity } from "@/pages/public-profile/profiles/blogger";
 
-const TicketsList = () => {
+const TripsList = () => {
   const [date, setDate] = useState<DateRange | undefined>({
     from: new Date(2025, 0, 20),
     to: addDays(new Date(2025, 0, 20), 20),
@@ -34,10 +44,10 @@ const TicketsList = () => {
       <Container>
         <Toolbar>
           <ToolbarHeading
-            title="Tickets"
-            description="Gestion, Recherche et administration des tickets"
+            title="Trajets"
+            description="Gestion, administrations des trajets de chaque moyen de transport."
           />
-          <ToolbarActions>
+          {/* <ToolbarActions>
             <Popover>
               <PopoverTrigger asChild>
                 <button
@@ -73,11 +83,10 @@ const TicketsList = () => {
                 />
               </PopoverContent>
             </Popover>
-          </ToolbarActions>
+          </ToolbarActions> */}
         </Toolbar>
 
-
-        <div className="row">
+        {/* <div className="row">
           <div className="grid gap-5 lg:gap-7.5">
 
             <div className="col-12">
@@ -87,11 +96,41 @@ const TicketsList = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
+        <div className="row">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-5 lg:gap-7.5">
+            <div className="col-span-2 lg:col-span-3">
+              {/* <Statistics details={details} /> */}
+            </div>
+
+            <div className="col-span-1">
+              <div className="flex flex-col gap-5 lg:gap-7.5">
+                <FavoriteGames />
+
+                <About />
+
+                <CommunityBadges title="Badges" />
+
+                {/* <Users title="Floyd’s Team" items={items} />
+
+                <Network title="Network" data={data} /> */}
+              </div>
+            </div>
+            <div className="col-span-2">
+              <div className="flex flex-col gap-5 lg:gap-7.5">
+                <Tournaments />
+
+                <NowPlaying />
+
+                <Activity />
+              </div>
+            </div>
+          </div>
+        </div>
       </Container>
     </Fragment>
   );
 };
 
-export { TicketsList };
+export { TripsList };

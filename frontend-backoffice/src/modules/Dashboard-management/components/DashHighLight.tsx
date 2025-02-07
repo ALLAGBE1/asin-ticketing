@@ -47,7 +47,7 @@ const DashHighLight = ({ limit }: IHighlightsProps) => {
         </div>
 
         <div className="flex items-center text-sm font-medium text-gray-800 gap-6">
-          <span className="lg:text-right">${row.total}k</span>
+          <span className="lg:text-right">{row.total}k CFA</span>
           <span className="lg:text-right">
             {row.increase ? (
               <KeenIcon icon="arrow-up" className="text-success" />
@@ -73,7 +73,7 @@ const DashHighLight = ({ limit }: IHighlightsProps) => {
   return (
     <div className="card h-full">
       <div className="card-header">
-        <h3 className="card-title">Réc&pitulatifs</h3>
+        <h3 className="card-title">Récapitulatifs</h3>
 
         <Menu>
           <MenuItem

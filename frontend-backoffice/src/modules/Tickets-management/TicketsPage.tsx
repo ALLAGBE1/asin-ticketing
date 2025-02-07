@@ -8,7 +8,7 @@ const TicketsPage = () => {
       <Route element={<TicketLayout />}>
         <Route path="" element={<TicketsList />} />
         <Route path="list" element={<TicketsList />} />
-      </Route>{" "}
+      </Route>
     </Routes>
   );
 };
